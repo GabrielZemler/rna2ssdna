@@ -35,7 +35,7 @@ void fasta(FILE *ipt, char *oname){
                     if(rnr>x)
                         {
                         if(rtype=='U'){
-                            rtype=='T';
+                            rtype='T';
                         }
                         fprintf(opt,"%c", rtype);
                         x++;
@@ -65,7 +65,7 @@ float *gethydrogen(){
     float *hp=malloc(sizeof(float) * 3);
         if(fscanf(hydro, "%*s %f %f %f", (hp+0),(hp+1),(hp+2)) >2)
         {       
-        fprintf(log,"Setting relative coordinates of H01 to:\n x=%.3f\n z=%.3f \n z=%.3f\n",hp[0],hp[1],hp[2]);
+        fprintf(log,"Setting relative coordinates of H2'' to:\n x=%.3f\n z=%.3f \n z=%.3f\n",hp[0],hp[1],hp[2]);
         fprintf(log,"----------------------------------------------------------\n");
         }
         fclose(hydro);
@@ -89,8 +89,8 @@ void convert(FILE *ipt){
             {
                 if(strcmp(type,"O2'")==0)
                 {
-                    fprintf(log,"Repacing O2' in residue %d with H01 and correcting atom positons\n", rnr);
-                    fprintf(opt,"ATOM%7d%5s  D%c%2s%4d%12.3f%8.3f%8.3f%6.2f%6.2f%12c\n",curr_line,"H01",rtype,chain,rnr,coord_x+*(hp+0),coord_y+*(hp+1),coord_z+*(hp+2),1.00,0.00,'H');
+                    fprintf(log,"Repacing O2' in residue %d with H2'' and correcting atom positons\n", rnr);
+                    fprintf(opt,"ATOM%7d%5s  D%c%2s%4d%12.3f%8.3f%8.3f%6.2f%6.2f%12c\n",curr_line,"H2''",rtype,chain,rnr,coord_x+*(hp+0),coord_y+*(hp+1),coord_z+*(hp+2),1.00,0.00,'H');
                     line_of_O=j;
                     curr_line++;
                 }

@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "../lib/atom.h"
 #ifndef read_h
 #define read_h
 #endif

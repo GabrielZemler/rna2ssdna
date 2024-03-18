@@ -17,7 +17,7 @@ float *getangle(float* vec1, float *vec2)
 {
     float *angle=(float *)malloc(sizeof(float));
     float mag_vec1=*(vec1+0)**(vec1+1)**(vec1+2);
-    float mag_vec2=sqrt((float)powf(*(vec2+0),2)+powf(*(vec2+1),2)+powf(*(vec2+2),2));
+    float mag_vec2=sqrtf(powf(*(vec2+0),2)+powf(*(vec2+1),2)+powf(*(vec2+2),2));
     float abs_scal=*(vec1+0)**(vec2+0)+*(vec1+1)**(vec2+1)+*(vec1+2)**(vec2+2);
     if(abs_scal<0){
         abs_scal=-abs_scal;
@@ -37,6 +37,16 @@ float *rotate(float * vec, float alpha, float beta, float gamma){
     Rxyz[2][0]=-sinf(beta);
     Rxyz[2][1]=cosf(beta)*sinf(gamma);
     Rxyz[2][2]=cosf(beta)*cosf(gamma);
+    printf("%f %f %f\n",alpha, beta, gamma );
+    for (int i = 0; i < 3; i++)
+    {
+        for (int j = 0; j < 3; j++)
+        {
+            printf("%f ", Rxyz[i][j]);
+        }
+        printf("\n");
+    }
+    
     for (int i = 0; i < 3; i++)
     {
        for (int j = 0; j < 3; j++)

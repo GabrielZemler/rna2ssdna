@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "../lib/atom.h"
 #ifndef reader_h
 #define reader_h
 #endif
