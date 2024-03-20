@@ -7,14 +7,49 @@ Setting relative coordinates of H2'' to:
  z=0.000 
  z=0.000
 ----------------------------------------------------------
+Reading parameters of C7:
+ r=1.500
+ theta=-0.002 
+ phi=-0.016
+----------------------------------------------------------
+Reading parameters of H71:
+ r=2.128
+ theta=-0.113 
+ phi=0.283
+----------------------------------------------------------
+Reading parameters of H72:
+ r=2.128
+ theta=-0.042 
+ phi=-0.519
+----------------------------------------------------------
+Reading parameters of H73:
+ r=2.129
+ theta=0.448 
+ phi=0.220
+----------------------------------------------------------
 Repacing O2' in residue 1 with H2'' and correcting atom positons
 Deleting atom HO2' in residue 1
+Placing C7 in resudue 2 at coordinates -2.558 0.505 0.507
+Placing H71 in resudue 2 at coordinates -2.067 -0.949 0.195
+Placing H72 in resudue 2 at coordinates -2.234 0.829 0.088
+Placing H73 in resudue 2 at coordinates -3.007 0.056 -0.414
+Deleting H5 in residue 2
 Repacing O2' in residue 2 with H2'' and correcting atom positons
 Deleting atom HO2' in residue 2
+Placing C7 in resudue 3 at coordinates -6.911 -3.484 1.667
+Placing H71 in resudue 3 at coordinates -6.391 -5.079 1.269
+Placing H72 in resudue 3 at coordinates -6.749 -3.322 1.180
+Placing H73 in resudue 3 at coordinates -7.469 -4.042 0.824
+Deleting H5 in residue 3
 Repacing O2' in residue 3 with H2'' and correcting atom positons
 Deleting atom HO2' in residue 3
 Repacing O2' in residue 4 with H2'' and correcting atom positons
 Deleting atom HO2' in residue 4
+Placing C7 in resudue 5 at coordinates -10.629 -6.537 -1.260
+Placing H71 in resudue 5 at coordinates -9.945 -9.093 -0.954
+Placing H72 in resudue 5 at coordinates -10.681 -6.589 -1.102
+Placing H73 in resudue 5 at coordinates -10.019 -5.927 -2.131
+Deleting H5 in residue 5
 Repacing O2' in residue 5 with H2'' and correcting atom positons
 Deleting atom HO2' in residue 5
 Repacing O2' in residue 6 with H2'' and correcting atom positons
@@ -31,11 +66,61 @@ Repacing O2' in residue 11 with H2'' and correcting atom positons
 Deleting atom HO2' in residue 11
 Repacing O2' in residue 12 with H2'' and correcting atom positons
 Deleting atom HO2' in residue 12
+Placing C7 in resudue 13 at coordinates -15.768 -29.736 -10.807
+Placing H71 in resudue 13 at coordinates -15.113 -32.081 -11.154
+Placing H72 in resudue 13 at coordinates -16.050 -30.018 -11.254
+Placing H73 in resudue 13 at coordinates -16.037 -30.005 -11.699
+Deleting H5 in residue 13
 Repacing O2' in residue 13 with H2'' and correcting atom positons
 Deleting atom HO2' in residue 13
 Repacing O2' in residue 14 with H2'' and correcting atom positons
 Deleting atom HO2' in residue 14
 Repacing O2' in residue 15 with H2'' and correcting atom positons
 Deleting atom HO2' in residue 15
-Found end of structure by END (line 493)
+Repacing O2' in residue 16 with H2'' and correcting atom positons
+Deleting atom HO2' in residue 16
+Repacing O2' in residue 17 with H2'' and correcting atom positons
+Deleting atom HO2' in residue 17
+Repacing O2' in residue 18 with H2'' and correcting atom positons
+Deleting atom HO2' in residue 18
+Repacing O2' in residue 19 with H2'' and correcting atom positons
+Deleting atom HO2' in residue 19
+Repacing O2' in residue 20 with H2'' and correcting atom positons
+Deleting atom HO2' in residue 20
+Placing C7 in resudue 21 at coordinates -21.760 -21.457 -6.827
+Placing H71 in resudue 21 at coordinates -21.757 -21.677 -7.062
+Placing H72 in resudue 21 at coordinates -20.967 -20.664 -7.181
+Placing H73 in resudue 21 at coordinates -22.124 -21.821 -7.794
+Deleting H5 in residue 21
+Repacing O2' in residue 21 with H2'' and correcting atom positons
+Deleting atom HO2' in residue 21
+Repacing O2' in residue 22 with H2'' and correcting atom positons
+Deleting atom HO2' in residue 22
+Repacing O2' in residue 23 with H2'' and correcting atom positons
+Deleting atom HO2' in residue 23
+Repacing O2' in residue 24 with H2'' and correcting atom positons
+Deleting atom HO2' in residue 24
+Placing C7 in resudue 25 at coordinates -9.097 -19.216 -3.501
+Placing H71 in resudue 25 at coordinates -9.362 -19.282 -2.881
+Placing H72 in resudue 25 at coordinates -9.081 -19.200 -2.970
+Placing H73 in resudue 25 at coordinates -10.111 -20.230 -3.787
+Deleting H5 in residue 25
+Repacing O2' in residue 25 with H2'' and correcting atom positons
+Deleting atom HO2' in residue 25
+Repacing O2' in residue 26 with H2'' and correcting atom positons
+Deleting atom HO2' in residue 26
+Repacing O2' in residue 27 with H2'' and correcting atom positons
+Deleting atom HO2' in residue 27
+Placing C7 in resudue 28 at coordinates -6.113 -6.009 -7.510
+Placing H71 in resudue 28 at coordinates -5.738 -7.588 -7.160
+Placing H72 in resudue 28 at coordinates -5.628 -5.524 -7.305
+Placing H73 in resudue 28 at coordinates -5.659 -5.555 -8.338
+Deleting H5 in residue 28
+Repacing O2' in residue 28 with H2'' and correcting atom positons
+Deleting atom HO2' in residue 28
+Repacing O2' in residue 29 with H2'' and correcting atom positons
+Deleting atom HO2' in residue 29
+Repacing O2' in residue 30 with H2'' and correcting atom positons
+Deleting atom HO2' in residue 30
+Found end of structure by END (line 972)
 ----------------------------------------------------------

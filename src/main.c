@@ -2,10 +2,7 @@
 */
 #include<stdio.h>
 #include <stdlib.h>
-#include "../lib/read.h"
 #include "../lib/write.h"
-#include "../lib/calculate.h"
-#define PI 3.14159265359 
 int main(int argc, char **argv)
 {
     writelog();
@@ -38,22 +35,10 @@ int main(int argc, char **argv)
                             printf("Appending information to rna2ssdna.log\n");
                             printf("Writing output to output.pdb\n");
                             convert(ipt);
+                            //test();
                             fclose(ipt);
                             printf("Done\n");
                             printf("----------------------------------------------------------\n");
-                            float v1[3]={1.00,0.00,0.00};
-                            float v2[3]={1.00,0.00,0.00};
-                            float v3[3]={1.00,0.00,0.00};
-                            float vecC5[3]={17.412,24.038,13.420};
-                            float vec02[3]={20.175, 23.262, 16.269};
-                            float *vecO2C5=getvec(vec02,vecC5);
-                            float *hp=getangle(v2,vecO2C5);
-                           for (int i = 0; i < 3; i++)
-                           {
-                            printf("%f\n",*(vecO2C5+i));
-                           }
-                           printf("%f\n",*(hp));
-                           
                         }
                         else
                         {
