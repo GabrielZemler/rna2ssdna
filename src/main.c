@@ -18,7 +18,6 @@ int main(int argc, char **argv)
         {
             switch (argv[i][1]) 
             {
- 
                 case 'f':
                         if(argv[i+1]!=NULL)
                         {
@@ -32,11 +31,15 @@ int main(int argc, char **argv)
                                 printf("----------------------------------------------------------\n");
                                 exit(1);
                             }
+                            else{
+                                printf("Reading from input file %s\n", inpt);
+                            }
                             printf("Appending information to rna2ssdna.log\n");
                             printf("Writing output to output.pdb\n");
                             convert(ipt);
-                            //test();
+                            
                             fclose(ipt);
+                            
                             printf("Done\n");
                             printf("----------------------------------------------------------\n");
                         }
@@ -50,10 +53,12 @@ int main(int argc, char **argv)
                         break;
                 case 'h':
                         printf("gerneric usage: rna2ssdna -f rna-file.pdb\n");
-                        printf("-f input.pdb:   declare input file for conversion\n");
-                        printf("-o output.pdb:  declare output file (default: dna.pdb)\n");
-                        printf("-s dna.fasta:   get supportive information: output dna in fasta code\n");
-                        printf("-h:             call help\n ");
+                        printf("-f input.pdb:               declare input file for conversion\n");
+                        //printf("-i insert.pdb aindx a1 a2:  insert structure at atom index aindx\n                            and rotate by axis (a1a2)\n");
+                        printf("-s:                         get supportive information\n");
+                        printf("-h:                         call help\n");
+                        printf("-o methyl.cord hydro.cord:  use own paramters for atom positions\n");
+                        printf("----------------------------------------------------------\n");
                         break;
                 case 's': 
                         if(inpt==NULL){
@@ -61,8 +66,7 @@ int main(int argc, char **argv)
                             printf("----------------------------------------------------------\n");
                             exit(-1);
                         }
-                        if(argv[i+1]!=NULL)
-                        {
+                        
                             char *opt=argv[i+1];
                             ipt=fopen(inpt, "r");
                              if(ipt==NULL)
@@ -71,8 +75,8 @@ int main(int argc, char **argv)
                                 printf("----------------------------------------------------------\n");
                                 exit(1);
                             }
-                            fasta(ipt,opt);
-                        }
+                            writesupporitve(ipt);
+                        
                         break;
             }
         }
