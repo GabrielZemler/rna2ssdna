@@ -21,7 +21,7 @@ int main(int argc, char **argv)
                 case 'f':
                         if(argv[i+1]!=NULL)
                         {
-                            printf("Beginning conversion of %s\n", argv[i+1]);
+                            printf("INFO Beginning conversion of %s\n", argv[i+1]);
                             inpt=argv[i+1];
                             ipt=fopen(inpt, "r");
                              if(ipt==NULL)
@@ -32,21 +32,21 @@ int main(int argc, char **argv)
                                 exit(1);
                             }
                             else{
-                                printf("Reading from input file %s\n", inpt);
+                                printf("INFO Reading from input file %s\n", inpt);
                             }
-                            printf("Appending information to rna2ssdna.log\n");
-                            printf("Writing output to output.pdb\n");
+                            printf("INFO Appending information to rna2ssdna.log\n");
+                            printf("INFO Writing output to output.pdb\n");
                             convert(ipt);
                             
                             fclose(ipt);
                             
-                            printf("Done\n");
+                            printf("INFO Done\n");
                             printf("----------------------------------------------------------\n");
                         }
                         else
                         {
                             printf("----------------------------------------------------------\n");
-                            printf("Fatal error: Input file does not exist or is unaccesible\n");
+                            printf("ERROR Input file does not exist or is unaccesible\n");
                             printf("----------------------------------------------------------\n");
                             exit(1);
                         }
@@ -57,12 +57,12 @@ int main(int argc, char **argv)
                         //printf("-i insert.pdb aindx a1 a2:  insert structure at atom index aindx\n                            and rotate by axis (a1a2)\n");
                         printf("-s:                         get supportive information\n");
                         printf("-h:                         call help\n");
-                        printf("-o methyl.cord hydro.cord:  use own paramters for atom positions\n");
+                        //printf("-o methyl.cord hydro.cord:  use own paramters for atom positions\n");
                         printf("----------------------------------------------------------\n");
                         break;
                 case 's': 
                         if(inpt==NULL){
-                            printf("Fatal error: No input file given");
+                            printf("ERROR No input file given");
                             printf("----------------------------------------------------------\n");
                             exit(-1);
                         }
@@ -71,7 +71,7 @@ int main(int argc, char **argv)
                             ipt=fopen(inpt, "r");
                              if(ipt==NULL)
                              {
-                                printf("Fatal error: Unable to read from input file\n");
+                                printf("ERROR Unable to read from input file\n");
                                 printf("----------------------------------------------------------\n");
                                 exit(1);
                             }
